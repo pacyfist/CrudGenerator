@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F69BFA8-3576-4935-925F-A74088BBD436}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pacyfist.CrudGenerator", "src\Pacyfist.CrudGenerator\Pacyfist.CrudGenerator.csproj", "{DE41E143-CA3A-4A6E-8399-3DF2974C11CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "src\WebApplication1\WebApplication1.csproj", "{F52AA715-FEB6-4704-8480-21EFD297B6DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE41E143-CA3A-4A6E-8399-3DF2974C11CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE41E143-CA3A-4A6E-8399-3DF2974C11CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE41E143-CA3A-4A6E-8399-3DF2974C11CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE41E143-CA3A-4A6E-8399-3DF2974C11CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52AA715-FEB6-4704-8480-21EFD297B6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52AA715-FEB6-4704-8480-21EFD297B6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52AA715-FEB6-4704-8480-21EFD297B6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52AA715-FEB6-4704-8480-21EFD297B6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE41E143-CA3A-4A6E-8399-3DF2974C11CB} = {6F69BFA8-3576-4935-925F-A74088BBD436}
+		{F52AA715-FEB6-4704-8480-21EFD297B6DD} = {6F69BFA8-3576-4935-925F-A74088BBD436}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D83EF1E1-8F1A-4DD9-B287-70E1617115C4}
+	EndGlobalSection
+EndGlobal

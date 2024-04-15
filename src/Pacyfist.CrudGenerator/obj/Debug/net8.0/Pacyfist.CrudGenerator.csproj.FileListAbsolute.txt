@@ -1,0 +1,13 @@
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\bin\Debug\net8.0\Pacyfist.CrudGenerator.deps.json
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\bin\Debug\net8.0\Pacyfist.CrudGenerator.dll
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\bin\Debug\net8.0\Pacyfist.CrudGenerator.pdb
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.csproj.AssemblyReference.cache
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.AssemblyInfoInputs.cache
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.AssemblyInfo.cs
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.csproj.CoreCompileInputs.cache
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.sourcelink.json
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.dll
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\refint\Pacyfist.CrudGenerator.dll
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\Pacyfist.CrudGenerator.pdb
+E:\GitHub\Pacyfist\CrudGenerator\src\Pacyfist.CrudGenerator\obj\Debug\net8.0\ref\Pacyfist.CrudGenerator.dll
