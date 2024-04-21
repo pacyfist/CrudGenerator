@@ -20,15 +20,16 @@ namespace Pacyfist.CrudGenerator.Generators
 
                     var services = source
                         .Select(s => $"services.AddTransient<I{s.SingularName}Service, {s.SingularName}Service>();")
-                        .JoinWithTabulation("        ");
+                        .AddTabulation(8)
+                        .JoinLines(2);
 
                     ctx.AddSource(
                         "ServiceCollectionExtensions.g.cs",
                         SourceText.From($$"""
                         namespace {{baseNamespace}};
 
-                        using WebApplication1.Interfaces;
-                        using WebApplication1.Services;
+                        using {{baseNamespace}}.Interfaces;
+                        using {{baseNamespace}}.Services;
 
                         public static partial class ServiceCollectionExtensions
                         {

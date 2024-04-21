@@ -8,7 +8,7 @@ namespace Pacyfist.CrudGenerator.Helpers
 {
     public static class AttributesHelper
     {
-        public static IncrementalValuesProvider<ModelPropertiesDto> GetModelProperties(this SyntaxValueProvider provider)
+        public static IncrementalValuesProvider<ModelDto> GetModelProperties(this SyntaxValueProvider provider)
         {
             return provider.ForAttributeWithMetadataName(
                 fullyQualifiedMetadataName: "CrudFactory.CrudifyAttribute",
@@ -17,7 +17,7 @@ namespace Pacyfist.CrudGenerator.Helpers
                 {
                     var attr = context.Attributes.First(a => a.AttributeClass?.Name == "CrudifyAttribute");
 
-                    return new ModelPropertiesDto()
+                    return new ModelDto()
                     {
                         BaseNamespace = GetBaseNamespace(context),
                         SingularName = attr.ConstructorArguments[0].Value?.ToString(),
@@ -51,13 +51,29 @@ namespace Pacyfist.CrudGenerator.Helpers
             return "--FAIL--";
         }
 
-
-        public static string JoinWithTabulation<T>(this IEnumerable<T> enumerable, string tabulation = "")
+        public static IEnumerable<string> AddTabulation<T>(this IEnumerable<T> enumerable, int count = 0)
         {
-            return string.Join("""
+            string tabulation = new string(' ', count);
+            return enumerable.Select(e => $"{tabulation}{e}");
+        }
+
+        public static string JoinLines(this IEnumerable<string> enumerable, int count = 1)
+        {
+            const string newline = """
 
 
-                """, enumerable.Select(e => $"{tabulation}{e}"));
+                """;
+
+            if (count == 1)
+            {
+                return string.Join(newline, enumerable);
+            }
+            else
+            {
+                string newlines = string.Concat(Enumerable.Repeat(newline, count));
+
+                return string.Join(newlines, enumerable);
+            }
         }
     }
 }

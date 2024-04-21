@@ -18,9 +18,10 @@ namespace Pacyfist.CrudGenerator.Generators
                 {
                     var baseNamespace = source.FirstOrDefault()?.BaseNamespace ?? "--NAMESPACE--";
 
-                    var services = source
-                        .Select(s => $"services.AddTransient<I{s.SingularName}Service, {s.SingularName}Service>();")
-                        .JoinWithTabulation("        ");
+                    var properties = source
+                        .Select(s => $"public DbSet<{s.SingularName}> {s.PluralName} {{ get; set; }}")
+                        .AddTabulation(4)
+                        .JoinLines(2);
 
                     ctx.AddSource(
                         "CustomDbContext.g.cs",
@@ -28,14 +29,11 @@ namespace Pacyfist.CrudGenerator.Generators
                         namespace {{baseNamespace}};
 
                         using Microsoft.EntityFrameworkCore;
-                        using WebApplication1.Models;
-
+                        using {{baseNamespace}}.Models;
 
                         public partial class CustomDbContext : DbContext
                         {
-                            public DbSet<User> Users { get; set; }
-
-                            public DbSet<Category> Categories { get; set; }
+                        {{properties}}
 
                             public CustomDbContext(DbContextOptions<CustomDbContext> options)
                                 : base(options)

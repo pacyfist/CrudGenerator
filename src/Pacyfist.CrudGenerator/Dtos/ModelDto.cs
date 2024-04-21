@@ -1,6 +1,6 @@
 ﻿namespace Pacyfist.CrudGenerator.Dtos
 {
-    public class ModelPropertiesDto
+    public class ModelDto
     {
         public string? BaseNamespace { get; internal set; }
 
