@@ -9,9 +9,12 @@
     ".NETStandard,Version=v2.0/": {
       "Pacyfist.CrudGenerator/1.0.0": {
         "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "Microsoft.CodeAnalysis.CSharp": "4.9.2",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "Scriban": "5.9.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
           "Pacyfist.CrudGenerator.dll": {}
@@ -128,10 +131,24 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Scriban/5.9.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
         }
       },
       "System.Buffers/4.5.1": {
@@ -247,6 +264,13 @@
       "path": "microsoft.codeanalysis.csharp/4.9.2",
       "hashPath": "microsoft.codeanalysis.csharp.4.9.2.nupkg.sha512"
     },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -260,6 +284,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Scriban/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V725wLd3YKTRua8kTHUwJYTvIouNqyMBzNaNamCLlZPTyeP4gl+WJtqXDnWMe+mTftTGEVYZgbR1pLRmdKjK1g==",
+      "path": "scriban/5.9.0",
+      "hashPath": "scriban.5.9.0.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

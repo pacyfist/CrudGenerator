@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj": {}
+    "C:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj": {
+    "C:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj",
+        "projectUniqueName": "C:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj",
         "projectName": "Pacyfist.CrudGenerator",
-        "projectPath": "E:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\obj\\",
+        "projectPath": "C:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\Pacyfist.CrudGenerator.csproj",
+        "packagesPath": "C:\\Users\\filfran\\.nuget\\packages\\",
+        "outputPath": "C:\\GitHub\\Pacyfist\\CrudGenerator\\src\\Pacyfist.CrudGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\filfran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -51,6 +50,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.CodeAnalysis.Analyzers": {
               "suppressParent": "All",
               "target": "Package",
@@ -66,6 +69,15 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Scriban": {
+              "include": "Build",
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )"
             }
           },
           "imports": [

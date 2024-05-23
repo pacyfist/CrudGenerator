@@ -1,5 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
+	
 	<PropertyGroup>
 		<!-- 👇 Source generators must target netstandard 2.0 -->
 		<TargetFramework>netstandard2.0</TargetFramework>
@@ -11,6 +12,8 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>false</ImplicitUsings>
 		<LangVersion>Latest</LangVersion>
+		<!-- Pack Scriban with it -->
+		<PackageScribanIncludeSource>true</PackageScribanIncludeSource>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -18,4 +21,10 @@
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.9.2" PrivateAssets="all" />
 	</ItemGroup>
 
+	<!-- SCRIBAN RELATED -->
+	<ItemGroup>
+		<PackageReference Include="Scriban" Version="5.9.0" IncludeAssets="Build" />
+		<PackageReference Include="Microsoft.CSharp" Version="4.7.0"/>
+		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4"/>
+	</ItemGroup>
 </Project>
